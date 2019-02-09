@@ -1,0 +1,112 @@
+.navigation {
+  z-index: 100;
+  width: 100%;
+  position: fixed;
+  font-weight: bold;
+  text-transform: uppercase;
+  transition: all .3s;
+  text-align: end;
+}
+
+.navigation div {
+  display: inline-block;
+  padding-right: 6%;
+  position: relative;
+}
+
+.navigation a {
+  position: relative;
+  animation: fade-up 1s ease-in-out;
+}
+
+.navigation a:hover {
+  color: #ff285b!important;
+  transition: color .2s ease;
+}
+
+.navigation a::after {
+  position: absolute;
+  content: "";
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: #381c75;
+  z-index: 2;
+  transform: scaleX(0);
+  transform-origin: bottom left;
+  transition: all 0.25s ease-out;
+}
+
+.navigation a:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+.navigation a:before {
+  position: absolute;
+  content: "";
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: #d0d0d0;
+  z-index: 1;
+}
+
+.title-img img {
+  max-width: 100px;
+}
+
+.title-img {
+  margin-top: -12%;
+  position: absolute;
+  padding: 2.5%;
+  z-index: 105;
+}
+
+.logo{
+  width: 200px;
+  white-space:nowrap;
+  overflow:hidden;
+              animation-fill-mode: backwards;
+      -webkit-animation-fill-mode: backwards;
+                   animation-name: logo-animation;
+           -webkit-animation-name: logo-animation;
+               animation-duration: 0.3s;
+       -webkit-animation-duration: 0.3s;
+        animation-timing-function: steps(100, end);
+-webkit-animation-timing-function: steps(100, end);
+                  animation-delay: 1s;
+          -webkit-animation-delay: 1s;
+        animation-iteration-count: 1;
+-webkit-animation-iteration-count: 1;
+              animation-direction: 0%;
+      -webkit-animation-direction: 0%;
+}
+
+@keyframes logo-animation {
+  0% { width: 0; }
+	37% { width:50px; }
+	70% { width:150px; }
+	100% { width:200px; }
+}
+
+@-webkit-keyframes logo-animation {
+  0%{ width: 0; }
+	37%{ width:50px; }
+	70%{ width:100px; }
+	100%{ width:150px; }
+}
+
+.sticky-logo {
+  z-index: 101;
+  position: fixed;
+  margin-top: -10px;
+  left: 4%;
+  transition: all .3s;
+}
+
+.sticky-logo img {
+  max-width: 50px;
+}

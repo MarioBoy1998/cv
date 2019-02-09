@@ -1,0 +1,142 @@
+.header .make, .header .something {
+  width: 6em;
+  white-space:nowrap;
+  overflow:hidden;
+                animation-fill-mode: backwards;
+        -webkit-animation-fill-mode: backwards;
+                     animation-name: make-animation;
+             -webkit-animation-name: make-animation;
+          animation-timing-function: steps(100, end);
+  -webkit-animation-timing-function: steps(100, end);
+          animation-iteration-count: 1;
+  -webkit-animation-iteration-count: 1;
+                animation-direction: 0%;
+        -webkit-animation-direction: 0%;
+}
+
+.header .make {
+          animation-duration: 1s;
+  -webkit-animation-duration: 1s;
+             animation-delay: 0.65s;
+     -webkit-animation-delay: 0.65s;
+}
+
+.header .something{
+        animation-duration: 0.7s;
+-webkit-animation-duration: 0.7s;
+           animation-delay: 0.2s;
+   -webkit-animation-delay: 0.2s;
+}
+
+@keyframes make-animation {
+  0% { width: 0; }
+  37% { width:2em; }
+  70% { width:4em; }
+  100% { width:6em; }
+}
+
+@-webkit-keyframes make-animation {
+	0% { width: 0; }
+	37% { width:2em; }
+	70% { width:4em; }
+	100% { width:6em; }
+}
+
+.title {
+  width: 10em;
+	white-space:nowrap;
+	overflow:hidden;
+		    -webkit-animation: title 4s steps(100, end) 0s infinite;
+		            animation: title 4s steps(100, end) 0s infinite;
+}
+
+@keyframes title {
+	0% { width: 0; }
+	37% { width:10em; }
+	70% { width:0; }
+	100% { width:0; }
+}
+
+@-webkit-keyframes title {
+	0% { width: 0; }
+	37% { width:10em; }
+	70% { width:0; }
+  100% { width:0; }
+}
+
+.header {
+  cursor: default;
+  margin-left: 12%;
+  margin-top: 12%;
+}
+
+.header h1 {
+  text-transform: uppercase;
+  line-height: 1.2;
+  font-size: 7em;
+  color: #381c75;
+}
+
+.title{
+  color: #ff285b!important;
+}
+
+.header:before {
+  position: absolute;
+  top: 76%;
+  left: 0;
+  content: ' ';
+  height: 14px;
+  width: 135px;
+  background-color: #ff285b;
+  animation: fadein 2s;
+}
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+    transform:  translate(0px, 10px);
+  }
+  to {
+    opacity: 1;
+    transform:  translate(0px, 0px);
+  }
+}
+
+ h1 span.red.first:before {
+  height: 14px;
+  top: 53px;
+}
+
+.arrow span {
+  margin-top: -170px;
+  width: 30px;
+  height: 250px;
+  writing-mode: tb-rl;
+  opacity: .6;
+  text-transform: uppercase;
+  font-size: 0.8em;
+  float: right;
+  padding: 10px;
+  margin-right: 40px;
+}
+
+.arrow {
+  cursor: pointer;
+   animation-duration: 1s;
+  animation-fill-mode: backwards;
+  animation-direction: 0%;
+       animation-name: fade-up;
+      animation-delay: 1s;
+}
+
+.arrow:hover svg {
+  margin-top: 0.6%;
+}
+
+.arrow svg {
+  float: right;
+  margin-top: -0.2%;
+  margin-right: -95px;
+  transition: all .2s ease;
+}

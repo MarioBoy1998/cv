@@ -1,0 +1,45 @@
+@import url("https://fonts.googleapis.com/css?family=Charm");
+@import url(./css/nav.css);
+@import url(./css/registration.css);
+@import url(./css/weather.css);
+@import url(./css/header.css);
+@import url(./css/pics.css);
+@import url(./css/info.css);
+
+body {
+  line-height: 2;
+  font-family: 'Charm',cursive;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+.active {
+  background: #ff285b;
+}
+
+.fade {
+   animation-duration: .8s;
+  animation-fill-mode: backwards;
+  animation-direction: 0%;
+       animation-name: fade-up;
+ animation-play-state: paused;
+}
+
+@keyframes fade-up {
+  0% {
+    opacity: 0;
+    transform:  translate(0px,30px);
+  }
+  100%  {
+    opacity: 1;
+    transform:  translate(0px,0px);
+  }
+}

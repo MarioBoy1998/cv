@@ -1,0 +1,179 @@
+.pic {
+  margin-top: 33%;
+  padding-left: 50px;
+  padding-right: 50px;
+  text-align: center;
+}
+
+.bottom-pics {
+  position: relative;
+  max-width: 1200px;
+  height: 675px;
+  margin-top: 150px;
+  margin-left: auto;
+  margin-right: auto;
+  overflow: hidden;
+}
+
+.top-text div {
+  position: relative;
+  width: 400px;
+  padding-right: 90px;
+  font-size: 27px;
+  cursor: default;
+  left: 60%;
+  bottom: -20%;
+  text-align: left;
+}
+
+.middle-pics img {
+  max-width: 100%;
+  height: auto;
+}
+
+.left-pic {
+ display: inline-block;
+ position: relative;
+ width: 600px;
+ height: 900px;
+ margin: 3%;
+ top: -50px;
+}
+
+.right-pic {
+  display: inline-block;
+  margin: 3%;
+  top: 50px;
+  position: relative;
+  width: 600px;
+  height: 901px;
+}
+
+.left-pic:hover img, .right-pic:hover img, .bottom-pic:hover img {
+     -moz-transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.left-pic img, .right-pic img, .bottom-pic img {
+  -webkit-transition: all .3s ease-out;
+     -moz-transition: all .3s ease-out;
+       -o-transition: all .3s ease-out;
+          transition: all .3s ease-out;
+}
+
+.left-pic, .right-pic, .bottom-pic {
+  overflow: hidden;
+}
+
+.left-pic h2, .right-pic h2, .bottom-pic h2 {
+  color: #381c75;
+}
+
+.left-pic .pic-info, .right-pic .pic-info, .bottom-pic .pic-info {
+  position: absolute;
+  z-index: 2;
+  background: #fff;
+  max-width: 400px;
+  width: 90%;
+  min-height: 100px;
+  bottom: 0;
+  padding: 25px 30px;
+  -webkit-transition: .3s ease;
+     -moz-transition: .3s ease;
+          transition: .3s ease;
+}
+
+.left-pic:hover .pic-info, .right-pic:hover .pic-info, .bottom-pic:hover .pic-info {
+  opacity: 0;
+  -webkit-transition: .5s ease-out;
+     -moz-transition: .5s ease-out;
+          transition: .5s ease-out;
+}
+
+.left-pic .pic-info {
+  left: 0;
+}
+
+.right-pic .pic-info {
+  right: 0;
+}
+
+.bottom-pic .pic-info {
+  left: 0;
+}
+
+.left-overlay, .right-overlay, .bottom-overlay {
+  background: #ff285b;
+  transition: color .2s ease;
+  z-index: 4;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  opacity: 0;
+  -webkit-transition: .5s ease-out;
+     -moz-transition: .5s ease-out;
+          transition: .5s ease-out;
+}
+
+.left-pic:hover .left-overlay, .right-pic:hover .right-overlay, .bottom-pic:hover .bottom-overlay {
+  opacity: .8;
+  -webkit-transition: .5s ease;
+     -moz-transition: .5s ease;
+          transition: .5s ease;
+}
+
+.left-hover, .bottom-hover, .right-hover {
+  color: white;
+  width: 400px;
+  height: 200px;
+  opacity: 0;
+  padding: 50px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  z-index: 5;
+  -webkit-transition: .5s ease;
+     -moz-transition: .5s ease;
+          transition: .5s ease;
+}
+
+.left-pic:hover .left-hover, .bottom-pics:hover .bottom-hover, .right-pic:hover .right-hover {
+ opacity: 1;
+ cursor: pointer;
+}
+
+.left-arrow, .right-arrow, .bottom-arrow {
+  color: white;
+  width: 150px;
+  height: 150px;
+  opacity: 0;
+  padding: 50px;
+  padding-left: 120px;
+  position: absolute;
+  text-align: center;
+  top: 0;
+  right: 0;
+  z-index: 5;
+  -webkit-transition: .5s ease;
+     -moz-transition: .5s ease;
+          transition: .5s ease;
+}
+
+.left-arrow p, .right-arrow p, .bottom-arrow p {
+  margin-left: 67%;
+  margin-top: 20%;
+  writing-mode: tb-rl;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.left-pic:hover .left-arrow, .right-pic:hover .right-arrow, .bottom-pic:hover .bottom-arrow {
+  opacity: 1;
+}

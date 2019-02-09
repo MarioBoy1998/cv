@@ -1,0 +1,153 @@
+.registrationContainer {
+ width: 100%;
+ position: absolute;
+ top: 50px;
+ margin-bottom: 10%;
+}
+
+.registrationBackground {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+.bgList {
+  width: 80%;
+  margin-left: 10%;
+  margin-right: 10%;
+  text-align: center;
+}
+
+.bgList div {
+ display: inline-block;
+ max-width: 100%;
+ margin: 2%;
+}
+
+.imgBox img {
+  max-width: 100%;
+  width: 500px;
+  height: auto;
+  cursor: pointer;
+  box-shadow: 0px 0px 8px #000;
+}
+
+.imgBox {
+  position: relative;
+}
+
+.imgBox h2 {
+  cursor: pointer;
+  font-size: 60px;
+  font-family: sans-serif;
+	position: absolute;
+  top: 40%;
+  color: white;
+  left: 40%;
+	z-index: 10;
+  opacity: 0;
+  transition: all 0.8s ease;
+}
+
+.imgBox:hover h2 {
+	opacity: 1;
+}
+
+.imgBox:hover img {
+	-webkit-filter: grayscale(90%);
+}
+
+.user {
+ text-align: center;
+ padding-top: 5%;
+ padding-bottom: 5%;
+ z-index: 7;
+}
+
+.user button {
+  display: inline-block;
+  padding: 13px 33px;
+  font-size: 12px;
+  height: 44px;
+  width: 140px;
+}
+
+button {
+  position: relative;
+  display: block;
+  border: solid 2px red;
+  background: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  cursor: pointer;
+  text-align: center;
+  font-weight: bold;
+  color: #381c75;
+  transition: .25s;
+}
+
+ button:hover {
+  background: #ff285b;
+  transition: color .2s ease;
+  color: white;
+}
+
+.user input {
+  width: 20%;
+  height: 40px;
+  border: solid 2px red;
+  border-right: 0;
+  font-size: 14px;
+  color: #381c75;
+}
+
+.year{
+  margin-left: 20%;
+  margin-right: 20%;
+  margin-top: 10%;
+  margin-bottom: 10%;
+  text-align: center;
+}
+
+.year button {
+  padding: 17px 45px;
+  font-size: 20px;
+  display: inline-block;
+  margin-left: 9%;
+  margin-right: 9%;
+}
+
+.final {
+  margin-bottom: 10%;
+  margin: 0 auto;
+  max-width: 206px;
+}
+
+.final button {
+  padding: 20px 50px;
+  font-size: 22px;
+}
+
+.popUpContainer {
+  width: 100%;
+  min-height: 100%;
+  background-color: rgba(0,0,0,0.25);
+  overflow: hidden;
+  position: fixed;
+  top: 0px;
+  z-index: 10;
+}
+.popUp {
+  color: white;
+  margin: 5% auto;
+  width: 70%;
+  height: 550px;
+  padding: 20px;
+  background-color: #381c75;
+  border-radius: 1px;
+  box-shadow: 0px 0px 10px #000;
+  text-align: center;
+}
